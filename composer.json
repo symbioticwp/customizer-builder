@@ -33,6 +33,7 @@
       "Symbiotic\\Customizer\\": "src/"
     }
   },
+  "minimum-stability": "dev",
   "scripts": {
     "test": [
       "phpcs --extensions=php --ignore=vendor/ ."
