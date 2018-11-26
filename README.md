@@ -78,6 +78,7 @@ This repo is a fork and was originally created by [SjorsO/wordpress-customizer-b
 
 ##### 1.0.0
 
+*
 * Removed newSection
 * Renamed new<Panel|Section> to add
 * [Select2](https://github.com/select2/select2) Field added 
