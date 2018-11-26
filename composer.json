@@ -3,7 +3,7 @@
   "type": "package",
   "license": "MIT",
   "description": "Build Wordpress Customizer Panels, Section and Controls with a fluid interface.",
-  "homepage": "https://github.com/customizer-builder",
+  "homepage": "https://github.com/symbioticwp/customizer-builder",
   "authors": [
     {
       "name": "Kevin Kernegger",
