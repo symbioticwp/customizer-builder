@@ -99,7 +99,7 @@ class CustomizerBuilder
 	 * @param string $title Title for this panel
 	 * @param Closure $closure
 	 */
-	public function newpanel($name, $title, Closure $closure = null)
+	public function newPanel($name, $title, Closure $closure = null)
 	{
 		$this->addQueuedControl();
 
