@@ -43,7 +43,7 @@ add_action("customize_register", function($wp_customize)
 {
 	$builder = new CustomizerBuilder($wp_customize);
 
-	$builder->addPanel("post_types", "Post Types", function() use ($builder) {
+	$builder->newPanel("post_types", "Post Types", function() use ($builder) {
 		$builder->addSection("Posts", "Header", function() use ($builder) {
 			$builder->addTextBox("post_title", "Post Title");
 			$builder->addSelect("post_style", "Post Style", [
