@@ -17,15 +17,24 @@ $ composer require symbioticwp/customizer-builder
 
 ### Setup
 
-After installing [PSR-4 autoloading](https://www.php-fig.org/psr/psr-4/) allows you
-to include your package dynamically.
+
+Enable dynamic class include ([PSR-4 autoloading](https://www.php-fig.org/psr/psr-4/))
+via composer autoloader. (Hint: Check first if you don't already have the following 
+snippet in your theme)
+
+````php
+<?php
+if (file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
+    require_once $composer;
+}
+````
 
 Always use the [customize_register](https://developer.wordpress.org/reference/hooks/customize_register/) 
 hook to add your customizer fields.
 
 
 #### Example
-***functions.php***
+functions.php
 ```php
 <?php
 use Symbiotic\Customizer\CustomizerBuilder;
@@ -69,7 +78,6 @@ Now you can use the field values in your theme
 
 This repo is a fork and was originally created by [SjorsO/wordpress-customizer-builder](https://github.com/SjorsO/wordpress-customizer-builder)
 
-
 ### Roadmap
 
 
@@ -78,7 +86,6 @@ This repo is a fork and was originally created by [SjorsO/wordpress-customizer-b
 
 ##### 1.0.0
 
-*
 * Removed newSection
 * Renamed new<Panel|Section> to add
 * [Select2](https://github.com/select2/select2) Field added 

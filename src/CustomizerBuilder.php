@@ -99,7 +99,7 @@ class CustomizerBuilder
 	 * @param string $title Title for this panel
 	 * @param Closure $closure
 	 */
-	public function addPanel($name, $title, Closure $closure = null)
+	public function newpanel($name, $title, Closure $closure = null)
 	{
 		$this->addQueuedControl();
 
@@ -113,6 +113,18 @@ class CustomizerBuilder
 		if(!is_null($closure)) {
 			$closure();
 		}
+	}
+
+	/**
+	 * Create a new section and set it as the current section
+	 * @param string $name Unique ID of this section
+	 * @param string $title Title for this section
+	 * @param Closure $closure
+	 */
+	public function newSection($name, $title, Closure $closure = null)
+	{
+		$this->currentPanel = null;
+		$this->addSection($name, $title, $closure);
 	}
 
 	/**
