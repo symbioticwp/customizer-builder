@@ -123,7 +123,6 @@ class CustomizerBuilder
 	 */
 	public function newSection($name, $title, Closure $closure = null)
 	{
-		
 		$this->currentPanel = null;
 		$this->addSection($name, $title, $closure);
 	}

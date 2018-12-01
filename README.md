@@ -78,16 +78,10 @@ Now you can use the field values in your theme
 
 This repo is a fork and was originally created by [SjorsO/wordpress-customizer-builder](https://github.com/SjorsO/wordpress-customizer-builder)
 
-### Roadmap
-
-
-
 ### Changelog
 
 ##### 1.0.0
 
-* Removed newSection
-* Renamed new<Panel|Section> to add
 * [Select2](https://github.com/select2/select2) Field added 
 * Added Namespacing 
 * Added composer.json
